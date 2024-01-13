@@ -1,13 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+
+
 module.exports = {
   content: ['./**/*.{razor,html,cshtml}'],
-  theme: {
+    theme: {
+
       extend: {
           colors: {
 
-              'bgDark': '#252436',
+              'bgDark': '#0f172a',
               'bgDarker': '#27272f',
-              'bgLight': '#e2e8f0',
+              'bgLight': '#ffffff',
 
               'textDark': '#020617',
               'textLight': '#f1f5f9',
