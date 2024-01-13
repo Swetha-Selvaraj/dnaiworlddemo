@@ -1,0 +1,23 @@
+﻿<div>
+	<h2 class="text-center mb-12"><span class="text-primary">DNAi</span> End-to-End  Solutions</h2>
+	<div class="flex flex-wrap justify-center gap-8">
+		@foreach(var content in EndToEndSolutionsContent)
+		{
+			<div class="p-4 sm:w-[300px] w-full text-center rounded-lg space-y-4 border border-primary hover:bg-bgDarker hover:border-primaryHover">
+			  <h3>@content[0]</h3>
+			  <p>@content[1]</p>
+			</div>
+		}
+	</div>
+</div>
+
+@code {
+
+	private string[][] EndToEndSolutionsContent =new[]
+	{
+	new[] {"Awareness","Videos, Blogs, Community, knowledge bank, expert advises"},
+	new[] {"Prevention","Life style changes, Al-based recommendations, vaccinations, supplements"},
+	new[] {"Detection","Regular affordable tests for cancer, single test for 65 types of cancer, cell free DNA analysis"},
+	new[] {"Management","Metaverse consultation, latest treatment recommendations, store to buy supplements"},
+	};
+}
