@@ -17,6 +17,9 @@
     h3 {
         @apply lg:text-4xl md:text-3xl text-2xl font-normal;
     }
+    h4 {
+        @apply lg:text-2xl md:text-xl text-lg font-normal;
+    }
     p {
         @apply lg:text-xl md:text-lg text-base font-light;
     }

@@ -1,0 +1,28 @@
+﻿<div class="lg:bg-gradient-to-r bg-gradient-to-t from-primary  rounded-lg  p-6 ">
+	<div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 w-full">
+		<div>
+			<div>
+				<img src="assets/images/CancerInsights1.png" alt="whole genome sequencing" class="w-full h-[500px] object-contain" />
+			</div>
+		</div>
+	   <div class="space-y-5 ">
+		   <h2 class="text-center">DNAi Cancer Insight</h2>
+			<p>
+				DNAi Cancer Insight provides comprehensive tests for 65 different varieties of cancer. Our early-detection screening can save lives by giving a waming 3 months
+				before stage 1 cancer. Our Al-based models analyze genomics and lifestyle information to suggest personalized food, sleep and exercise regimes. With our whole
+				genome analysis, we provide the chances of getting different types of cancer over your entire lifetime.
+			</p>
+			<div class="grid grid-cols-1 sm:grid-cols-3  lg:grid-cols-1 xl:grid-cols-3 gap-6 text-center">
+				@foreach(var content in CancerInsightsContent)
+				{
+					<h4 class="lg:bg-gradient-to-l bg-gradient-to-t from-secondary to-secondaryHover p-5 rounded-lg">@content</h4>
+				}
+			</div>
+	   </div>	
+	
+	</div>
+</div>
+
+@code {
+	private string[] CancerInsightsContent = { "Whole Genome Sequencing", "Large Cancer Panel", "AI-Driven Insights" };
+}
