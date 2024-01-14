@@ -1,0 +1,22 @@
+﻿<div class="p-4 bg-secondary rounded-lg">
+	<h2 class="text-center mb-12">Coming Soon...</h2>
+	<div class="grid grid-cols-1 md:grid-cols-3 justify-center gap-4 ">
+		@foreach (var content in ComingSoomContent)
+		{
+			<div class="flex flex-col items-center text-center gap-4">
+				<img src=@content[0] alt=@content[1] class="w-full h-[250px] object-contain" />
+				<h4>@content[1]</h4>
+				<p class="px-6">@content[2]</p>
+			</div>
+		}
+	</div>
+</div>
+
+@code {
+	private string[][] ComingSoomContent = new[]
+	{
+	new[] {"assets/images/coach.png","AI Coach","Coach to continuously assist the right balance of exercise, food, place to live, sleep a supplements"},
+	new[] {"assets/images/metaverse.png","Metaverse Consultation","VR Consultation experts, doctors and life coaches to discuss health issues and lifestyle changes"},
+	new[] {"assets/images/vaccine.png","Cancer Vaccines","Specific Cancer Vaccines can protect people with a high propensity to cancer"},
+	};
+}

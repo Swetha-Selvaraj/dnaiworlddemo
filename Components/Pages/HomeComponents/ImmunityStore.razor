@@ -1,0 +1,22 @@
+﻿<div class="p-4">
+	<h2 class="text-center mb-12"><span class="text-primary">Immunity</span> Store</h2>
+	<div class="grid grid-cols-1 md:grid-cols-3 justify-center gap-4 ">
+		@foreach(var content in ImmunityStoreContent)
+		{
+			<div class="flex flex-col items-center text-center gap-4">
+				<img src=@content[0] alt=@content[1] class="w-full h-[250px] object-contain" />
+				<h4 class="text-secondary">@content[1]</h4>
+				<p class="px-6">@content[2]</p>
+			</div>
+		}
+	</div>
+</div>
+
+@code {
+	private string[][] ImmunityStoreContent = new[]
+	{
+	new[] {"assets/images/organic.png","Organic Food","Food free from pesticides, chemicals fertilizers, non-GMO and healthy to the gut."},
+	new[] {"assets/images/supplements.png","Supplements","Natural anti oxidants, anti-inflammatory and nutrients to boost immunity and fight cancer."},
+	new[] {"assets/images/natural.png","Natural Medicine","Research-based organic medicine and remedies can reduce the impact of cancer."},
+	};
+}
